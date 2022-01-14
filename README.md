@@ -1,6 +1,6 @@
 # Doors UI
 
-Some random windows OS UI experience on web because dashboard has too many stuffs
+Some random windows OS UI experiments on web because dashboard has too many stuffs
 
 ```javascript
     import { Door, useDisclosure } from 'doors-ui';
