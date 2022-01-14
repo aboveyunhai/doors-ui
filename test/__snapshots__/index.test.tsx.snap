@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`door is close 1`] = `
+<div
+  data-projection-id={1}
+  onPointerDownCapture={[Function]}
+  style={
+    Object {
+      "backgroundColor": "white",
+      "border": "1px solid rgba(186, 188, 190, 0.5)",
+      "height": "400px",
+      "left": 0,
+      "minWidth": "200px",
+      "opacity": 0,
+      "position": "fixed",
+      "top": 0,
+      "transform": "none",
+      "visibility": "hidden",
+      "width": "300px",
+      "zIndex": 19999,
+    }
+  }
+/>
+`;

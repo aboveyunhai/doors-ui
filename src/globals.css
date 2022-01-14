@@ -1,0 +1,15 @@
+.door-btn:hover {
+  background-color: rgba(186, 188, 190, 0.4) !important;
+}
+
+.door-btn:active {
+  background-color: rgba(186, 188, 190, 0.8) !important;
+}
+
+.door-warning:hover {
+  background-color: rgb(235, 36, 39, 0.8) !important;
+}
+
+.door-warning:active {
+  background-color: rgb(235, 36, 39, 0.4) !important;
+}
