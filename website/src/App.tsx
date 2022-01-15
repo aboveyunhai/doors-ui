@@ -1,5 +1,5 @@
 import React from 'react';
-import 'doors-ui/src/globals.css'
+import 'doors-ui/src/styles/globals.css'
 import { Door, useDisclosure } from 'doors-ui';
 import { LoremIpsum } from 'lorem-ipsum';
 
