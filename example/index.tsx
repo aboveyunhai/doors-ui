@@ -1,8 +1,8 @@
 import 'react-app-polyfill/ie11';
+import '../src/styles/globals.css';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Door, useDisclosure } from '../src';
-import '../src/globals.css';
+import { Door, useDisclosure } from '../.';
 import { LoremIpsum } from "lorem-ipsum";
 
 const App = () => {
