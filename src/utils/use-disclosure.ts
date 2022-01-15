@@ -1,9 +1,28 @@
-import { callAllHandlers } from './index';
 import * as React from 'react';
 import { useControllableProp } from './use-controllable';
 import { useId } from './use-id';
 import { useCallbackRef } from './use-callback-ref';
 
+// helper functions
+export type FunctionArguments<T extends Function> = T extends (
+  ...args: infer R
+) => any
+  ? R
+  : never;
+
+export function callAllHandlers<T extends (event: any) => void>(
+  ...fns: (T | undefined)[]
+) {
+  return function func(event: FunctionArguments<T>[0]) {
+    fns.some((fn) => {
+      fn?.(event);
+      return event?.defaultPrevented;
+    });
+  };
+}
+
+
+// main functions
 export interface UseDisclosureProps {
   isOpen?: boolean;
   defaultIsOpen?: boolean;

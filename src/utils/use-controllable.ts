@@ -1,7 +1,21 @@
-import { runIfFn } from './index';
 import * as React from 'react';
 import { useCallbackRef } from './use-callback-ref';
 
+// helper functions
+export function isFunction<T extends Function = Function>(
+  value: any
+): value is T {
+  return typeof value === 'function';
+}
+
+export function runIfFn<T, U>(
+  valueOrFn: T | ((...fnArgs: U[]) => T),
+  ...args: U[]
+): T {
+  return isFunction(valueOrFn) ? valueOrFn(...args) : valueOrFn;
+}
+
+// main functions
 export function useControllableProp<T>(prop: T | undefined, state: T) {
   const isControlled = prop !== undefined;
   const value = isControlled && typeof prop !== 'undefined' ? prop : state;
