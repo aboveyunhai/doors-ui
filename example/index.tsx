@@ -6,7 +6,8 @@ import '../src/globals.css';
 import { LoremIpsum } from "lorem-ipsum";
 
 const App = () => {
-  const disclosureProps = useDisclosure({ defaultIsOpen: true });
+  const disclosurePropsOn = useDisclosure({ defaultIsOpen: true });
+  const disclosurePropsOff = useDisclosure({ defaultIsOpen: false });
   const lorem = new LoremIpsum({
     sentencesPerParagraph: {
       max: 8,
@@ -19,9 +20,29 @@ const App = () => {
   });
 
   return (
-    <div>
-      <button onClick={disclosureProps.onToggle}>open A</button>
-      <Door title={'A'} disclosureProps={disclosureProps} lessThanScreen={true}>
+    <div
+      style={{
+        width: '100%',
+        height: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      <button onClick={disclosurePropsOn.onToggle}>default on</button>
+      <Door
+        title={'A'}
+        disclosureProps={disclosurePropsOn}
+        lessThanScreen={true}
+      >
+        default is open
+      </Door>
+      <button onClick={disclosurePropsOff.onToggle}>default off</button>
+      <Door
+        title={'A'}
+        disclosureProps={disclosurePropsOff}
+        lessThanScreen={true}
+      >
         {lorem.generateParagraphs(7)}
       </Door>
     </div>
