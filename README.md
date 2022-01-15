@@ -5,6 +5,7 @@ Some random windows OS UI experiments on web because dashboard has too many stuf
 npm i doors-ui
 ```
 ```javascript
+    import 'doors-ui/src/globals.css'
     import { Door, useDisclosure } from 'doors-ui';
 
     const App = () => {
