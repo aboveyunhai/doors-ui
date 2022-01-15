@@ -1,6 +1,5 @@
 import React from 'react';
 import 'doors-ui/src/globals.css'
-// @ts-ignore
 import { Door, useDisclosure } from 'doors-ui';
 import { LoremIpsum } from 'lorem-ipsum';
 

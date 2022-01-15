@@ -21,7 +21,6 @@ export function callAllHandlers<T extends (event: any) => void>(
   };
 }
 
-
 // main functions
 export interface UseDisclosureProps {
   isOpen?: boolean;
