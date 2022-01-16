@@ -1,6 +1,7 @@
 # Doors UI
 
-Some random windows OS UI experiments on web because dashboard has too many stuffs
+Some random windows OS UI experiments on web because dashboard has too many stuffs,
+<br/>Many codes are ripped of from chakra-ui slide transition with a lof of modifications, credit and links are inside the correspoding source code. 
 ```
 npm i doors-ui
 ```
