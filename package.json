@@ -36,7 +36,8 @@
     "trailingComma": "es5"
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "testMatch": ["<rootDir>/test/*.(spec|test).{ts,tsx,js,jsx}"]
   },
   "peerDependencies": {
     "react": ">=16"
